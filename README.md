@@ -1,4 +1,4 @@
-### BoilerPlate API
+## BoilerPlate API
 
 - Node
 
@@ -8,4 +8,10 @@
 
 - Typescript
 
-` npm start `
+### How to run
+
+` yarn start `
+### Run tests
+
+
+` yarn test `

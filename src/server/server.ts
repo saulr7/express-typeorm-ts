@@ -4,7 +4,7 @@ import PhotoRoutes from '../routes/photoRoutes'
 
 class Server {
 
-  private app: express.Application
+  readonly app: express.Application
   private photoRoutes: PhotoRoutes
   private albumRoutes: AlbumRoutes
 
@@ -30,6 +30,10 @@ class Server {
 
     this.app.get('/', (req: Request, res: Response) => {
       res.send("It works")
+    })
+
+    this.app.get('/a', (req: Request, res: Response) => {
+      res.json({ msg: "ok" })
     })
 
   }
